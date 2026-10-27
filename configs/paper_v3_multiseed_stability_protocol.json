@@ -1,0 +1,31 @@
+{
+    "version": "paper_v3_multiseed_clean_stability_v1",
+    "purpose": "Evaluate frozen detector stability across independent BB84 test realizations",
+    "number_of_runs": 10,
+    "seeds": [
+        20261101,
+        20261102,
+        20261103,
+        20261104,
+        20261105,
+        20261106,
+        20261107,
+        20261108,
+        20261109,
+        20261110
+    ],
+    "sessions_per_run": 1800,
+    "sessions_per_channel": 600,
+    "normal_per_channel": 300,
+    "attack_per_channel": 300,
+    "bits_per_session": 10000,
+    "baseline_threshold": 0.38,
+    "robust_threshold": 0.59,
+    "rules": {
+        "models_frozen": true,
+        "thresholds_frozen": true,
+        "channel_ranges_frozen": true,
+        "attack_distribution_frozen": true,
+        "no_tuning_from_multiseed_results": true
+    }
+}

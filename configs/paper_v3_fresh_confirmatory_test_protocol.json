@@ -1,0 +1,63 @@
+{
+    "version": "paper_v3_fresh_confirmatory_test_v1",
+    "master_seed": 20261021,
+    "bits_per_session": 10000,
+    "channels": {
+        "Low": {
+            "noise_range": [
+                0.005,
+                0.015
+            ],
+            "loss_range": [
+                0.05,
+                0.15
+            ]
+        },
+        "Medium": {
+            "noise_range": [
+                0.02,
+                0.04
+            ],
+            "loss_range": [
+                0.2,
+                0.35
+            ]
+        },
+        "High": {
+            "noise_range": [
+                0.05,
+                0.07
+            ],
+            "loss_range": [
+                0.4,
+                0.55
+            ]
+        }
+    },
+    "sessions_per_channel": 600,
+    "normal_per_channel": 300,
+    "attack_per_channel": 300,
+    "attack_distribution": {
+        "weak_fraction": 0.7,
+        "weak_eve_range": [
+            0.01,
+            0.1
+        ],
+        "strong_fraction": 0.3,
+        "strong_eve_range": [
+            0.1,
+            0.3
+        ]
+    },
+    "baseline_model": "random_forest_v2_primary.joblib",
+    "baseline_threshold": 0.38,
+    "robust_model": "random_forest_v2_robust_unthresholded.joblib",
+    "robust_threshold": 0.59,
+    "rules": {
+        "no_training_on_fresh_test": true,
+        "no_threshold_tuning_on_fresh_test": true,
+        "no_recipe_selection_on_fresh_test": true,
+        "no_model_selection_on_fresh_test": true,
+        "no_methodology_change_after_viewing_results": true
+    }
+}

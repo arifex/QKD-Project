@@ -1,0 +1,12 @@
+{
+    "model": "Robust Random Forest",
+    "threshold": 0.59,
+    "selection_rule": "Highest validation attack recall subject to FPR <= 20%",
+    "validation_accuracy": 0.8166666666666667,
+    "validation_precision": 0.8077753779697624,
+    "validation_attack_recall": 0.8311111111111111,
+    "validation_f1": 0.8192771084337349,
+    "validation_fnr": 0.1688888888888889,
+    "validation_fpr": 0.19777777777777777,
+    "validation_roc_auc": 0.9113419753086419
+}

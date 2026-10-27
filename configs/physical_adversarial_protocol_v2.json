@@ -1,0 +1,63 @@
+{
+    "version": "physical_adversarial_v2",
+    "primary_model": "Random Forest",
+    "threshold": 0.38,
+    "evaluation_candidates": 761,
+    "asr_denominator": "Originally correctly detected attack samples only",
+    "seed_policy": "Original session seed reused for every candidate",
+    "eve_factors": [
+        1.0,
+        0.95,
+        0.9,
+        0.85,
+        0.8
+    ],
+    "noise_shifts": [
+        -0.002,
+        0.0,
+        0.002
+    ],
+    "loss_shifts": [
+        -0.02,
+        0.0,
+        0.02
+    ],
+    "channel_ranges": {
+        "Low": {
+            "noise": [
+                0.005,
+                0.015
+            ],
+            "loss": [
+                0.05,
+                0.15
+            ]
+        },
+        "Medium": {
+            "noise": [
+                0.02,
+                0.04
+            ],
+            "loss": [
+                0.2,
+                0.35
+            ]
+        },
+        "High": {
+            "noise": [
+                0.05,
+                0.07
+            ],
+            "loss": [
+                0.4,
+                0.55
+            ]
+        }
+    },
+    "selection_rule": "Among successful evasions, choose highest Eve rate; then smallest noise/loss change; then lowest attack probability",
+    "failure_policy": "Keep original sample if no successful candidate exists",
+    "pilot_samples": 30,
+    "pilot_successes": 5,
+    "pilot_asr": 0.16666666666666666,
+    "successful_mean_eve_retained_ratio": 0.8899999999999999
+}

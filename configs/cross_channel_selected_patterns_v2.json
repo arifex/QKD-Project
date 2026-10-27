@@ -1,0 +1,26 @@
+{
+    "Low": {
+        "eve_factor": 0.8,
+        "noise_shift": -0.002,
+        "loss_shift": -0.02,
+        "validation_asr": 0.10902255639097744,
+        "validation_eligible_attacks": 266,
+        "validation_successful_evasions": 29
+    },
+    "Medium": {
+        "eve_factor": 0.8,
+        "noise_shift": -0.002,
+        "loss_shift": 0.02,
+        "validation_asr": 0.15416666666666667,
+        "validation_eligible_attacks": 240,
+        "validation_successful_evasions": 37
+    },
+    "High": {
+        "eve_factor": 0.8,
+        "noise_shift": -0.002,
+        "loss_shift": 0.02,
+        "validation_asr": 0.14056224899598393,
+        "validation_eligible_attacks": 249,
+        "validation_successful_evasions": 35
+    }
+}

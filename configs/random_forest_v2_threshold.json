@@ -1,0 +1,10 @@
+{
+    "model": "Random Forest",
+    "threshold": 0.38,
+    "clean_test_accuracy": 0.83,
+    "clean_test_attack_recall": 0.8456,
+    "clean_test_f1": 0.8326,
+    "clean_test_fnr": 0.1544,
+    "clean_test_fpr": 0.1856,
+    "clean_test_roc_auc": 0.9195
+}
